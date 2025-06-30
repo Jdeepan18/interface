@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartIDE AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="https://unpkg.com/monaco-editor@0.34.1/min/vs/loader.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🚀 SmartIDE AI</h1>
+    <select id="language">
+      <option value="javascript">JavaScript</option>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+    </select>
+    <button onclick="runCode()">▶ Run</button>
+  </header>
+
+  <div id="editor"></div>
+
+  <div id="output-container">
+    <h3>🧾 Output:</h3>
+    <iframe id="output"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
